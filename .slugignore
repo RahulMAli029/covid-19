@@ -2,3 +2,4 @@
 *.psd
 *.h5
 /models
+/assets
