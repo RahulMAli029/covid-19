@@ -11,7 +11,7 @@ from dash.dependencies import Input, Output
 import dash_table as dt
 
 from sklearn.preprocessing import MinMaxScaler
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 
 
 data = pd.read_csv(r'https://api.covid19india.org/csv/latest/state_wise_daily.csv')
