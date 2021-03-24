@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Covid-19:Prediction And Aanalysis Of Spreading Rate</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <style type="text/css">
+        body{
+            background: #2C2C2C;
+            color:white;
+            font-family: sans-serif;
+            /*overflow: hidden;*/
+        }
+        /*To hide the scroll bar*/
+        body::-webkit-scrollbar {
+          display: none;
+        }
+
+        div{
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .modal-content{
+            width: 200%;
+            background:#2C2C2C;
+            opacity: 0.9;
+        }
+        .modal-dialog{
+            margin-left: 0px;
+            opacity: 1;
+        }
+        #myModal::-webkit-scrollbar {
+          display: none;
+        }
+
+
+        #heading{
+            text-align: center;
+            color: #78ABEE;
+            font-size: 40px;
+            margin:20px 0px 20px 0px;
+        }
+
+        hr{
+            border:2px solid #78ABEE;
+        }
+
+        p{
+            font-size: 20px;
+            line-height: 150%;
+            color: #fff;
+            text-align: justify;
+        }
+
+        #contrib li{
+            width: 30%;
+            font-size: 20px;
+            height: 50px;
+            float: left;
+            text-decoration: 1px solid underline;
+            position: relative;
+        }
+
+        ol{
+            padding-bottom: 60px;
+        }
+
+        a{
+            color:white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+            a:hover{
+                text-decoration: 1px solid underline;
+                color:#78ABEE;
+            }
+
+        ul{
+            line-height: 200%;
+            list-style-type: square;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 id="heading">COVID-19 Analysis And Prediction Of Spreading Rate</h1><hr>
+    <button type="button" class="btn btn-info btn-xl float-right" data-toggle="modal" data-target="#myModal">See safety Precautions</button>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="https://pbs.twimg.com/media/ErXu7OCU0AQstJV.jpg" style="width: 90%;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div>
+            <h1>About This Project <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" fill="currentColor" class="bi bi-kanban-fill" viewBox="0 0 16 16">
+              <path d="M2.5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11zm5 2h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm-5 1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm9-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/>
+            </svg></h1>
+            <p>It's been over a year since the outbreak of COVID-19 has started.
+                All countries are trying hard to control the spreading of virus. If you have over a billion people in a country and
+                you are trying to stop a spreading of a virus which speads through air easily is very very difficult.
+                Government has to think over all the different aspect before taking any decision. This project is a small step against the virus and help citizens of India to foresee the conditions and the governing bodies to take the decisions quickly.
+                We have build a machine learning model trained on clinical data of COVID patients available and predicting the number of cases for next 7 days.
+            </p>
+            <hr>
+        </div>
+        <div>
+            <h1>Contributors <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+  <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+  <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+</svg></h1>
+            <div>
+                <ol id="contrib">
+                    <li>Rahul Mali</li>
+                    <li>Shubham Patil</li>
+                    <li>Sumit Rasal</li>
+                    <li>Ganesh Kannor</li>
+                    <li>Danish Majid</li>
+                </ol>
+            </div>
+            <br>
+            <p>Also, we are thankful to <u>Ms. Sunita Nandgave</u> and <u>Mr. Kushal Sharma</u> for helping us in this project and solving doubts from time to time.</p>
+            <hr>
+        </div>
+        <div>
+            <h1>Resources and Important Links<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+              <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+              <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
+            </svg></h1>
+            <ul>
+                <li><i class="bi bi-link-45deg"></i><a href="https://github.com/covid19india">COVID19-India Ops</a></li>
+                <li><a href="https://github.com/CSSEGISandData/COVID-19">Johns Hopkins University Center for Systems Science and Engineering</a></li>
+                <li><a href="https://www.who.int/health-topics/coronavirus">World Health Organization (WHO)</a></li>
+                <li><a href="https://www.mohfw.gov.in/" target="parent">Ministry Of Health And Family Welfare, India</a></li>
+            </ul>
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
