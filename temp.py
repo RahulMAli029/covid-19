@@ -32,7 +32,8 @@ app.title = 'COVID-19: Prediction And Analysis Of Spreading Rate'
 # App layout
 app.layout = html.Div([
 
-    html.H1("COVID-19 Analysis And Prediction Of Spreading Rate", style={'text-align': 'center',"color":'#78ABEE'}),
+    html.H1("COVID-19 Analysis And Prediction Of Spreading Rate",id="heading"),
+    html.Hr(),
     dcc.Dropdown(id="slct_state",
                  options=[
                         {"label": "Andaman and Nicobar Islands", "value": "AN"},
@@ -76,12 +77,12 @@ app.layout = html.Div([
                  value="MH",
                  style={'width': "40%",'margin-left':'30%'}
                  ),
-
+    html.A(html.Button('About', className='three columns',style={'color':'#78ABEE','font-size':'20px','text-align':'center','border':'none'}),rel='external',href='/assets/about.html',style={'position':'absolute','float':'right','border':'1px solid #78ABEE','border-radius':'5px'}),
     html.Div(id='output_container', children=[],style={"color":"white","font-size":"30px","text-align":"center"}),
     html.Br(),
     html.H3("Prediction Of Spreading Rate for Next 7 days", style={'text-align': 'center',"color":'#78ABEE'}),
     html.Br(),
-    html.Div(id="pred_container",children=[],),
+    html.Div(id="pred_container",children=[],style={'font-size':'20px'}),
     html.Br(),
 
     html.Div([
