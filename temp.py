@@ -182,7 +182,7 @@ def show_prediction(option_selected):
 
     test_prediction = []
 
-    name = "models/confirmed_{0}_2021-03-18.h5".format(option_selected)
+    name = "models-1/confirmed_{0}_2021-03-31.h5".format(option_selected)
     model = load_model(name)
     ##last n points from training set
     first_eval_batch = scaled_train[-5:]
@@ -222,4 +222,4 @@ def show_prediction(option_selected):
                           tooltip_duration=None)
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server()
