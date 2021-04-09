@@ -182,7 +182,7 @@ def show_prediction(option_selected):
 
     test_prediction = []
 
-    name = "models-1/confirmed_{0}_2021-03-31.h5".format(option_selected)
+    name = "models-3/confirmed_{0}_2021-04-09.h5".format(option_selected)
     model = load_model(name)
     ##last n points from training set
     first_eval_batch = scaled_train[-5:]
